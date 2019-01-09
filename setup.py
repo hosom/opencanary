@@ -16,7 +16,7 @@ setup(
         'pyasn1==0.1.7',
         'pycrypto==2.6.1',
         'simplejson==3.6.5',
-        'wsgiref==0.1.2',
+        #'wsgiref==0.1.2',
         'zope.interface==4.1.1',
         'PyPDF2==1.23',
         'fpdf==1.7',
