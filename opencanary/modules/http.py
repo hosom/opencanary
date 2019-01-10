@@ -100,7 +100,7 @@ class BasicLogin(Resource):
             username = '<not supplied>'
         try:
             password = request.args['password'][0]
-       except (KeyError, IndexError):
+        except (KeyError, IndexError):
             password = '<not supplied>'
         useragent = request.getHeader('user-agent')
         if not useragent:
