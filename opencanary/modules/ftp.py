@@ -41,7 +41,8 @@ class LoggingFTP(FTP):
 
         del self._user
 
-        def _cbLogin((interface, avatar, logout)):
+        def _cbLogin(interface_avatar_logout):
+            interface, avatar, lockout = interface_avatar_logout
             assert interface is IFTPShell, "The realm is busted, jerk."
             self.shell = avatar
             self.logout = logout
