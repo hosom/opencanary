@@ -187,7 +187,7 @@ class Config:
             with open(cfg, "w") as f:
                 json.dump(self.__config, f, sort_keys=True, indent=4, separators=(',', ': '))
 
-        except Exception, e:
+        except Exception as e:
             print("[-] Failed to save config file %s" % e)
             raise ConfigException("config", "%s" % e)
 
